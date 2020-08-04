@@ -1,0 +1,517 @@
+/*
+Theme Name: Total Child Theme
+Theme URI: https://your-site.com
+Description: Your site description. Go to Appearance > Editor to modify this file.
+Author: Your Name
+Author URI: https://your-site.com
+Template: Total
+Version: 1.0
+*/
+
+
+/* begin Header */
+#site-header {
+	z-index: 9999 !important;
+}
+
+/* Buttons Header */
+.btn-header {
+	margin-top: -3px !important;
+	margin-left: 20px !important;
+	padding: 0 !important;
+	font-size: inherit !important;
+}
+.btn-header a {
+	color: #fff !important;	
+	height: auto !important;
+}
+.btn-header a span {
+	padding: 18px 20px !important;
+	font-size: inherit !important;
+}
+/* end Header */
+
+
+
+/* begin Shadow/Radius Block, Images */
+.blockshadow img {
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.blockradius img {
+	border-radius: 10px;
+}
+/* end Shadow/Radius Block, Images */
+
+
+
+/* begin Sections */
+.hero-sec-wrap {
+    top: -125px !important;
+}
+
+.about-sec-wrap {
+	margin-top: -25px !important;
+	margin-bottom: 130px !important;
+}
+
+.services-sec-wrap {
+	margin-bottom: 75px !important;
+}
+.services-sec-wrap .services__row-top {
+	margin-bottom: 90px !important;
+}
+
+.aim-sec-wrap {
+	margin-bottom: 135px !important;
+}
+
+.reviews-sec-wrap {
+	margin-top: -35px !important;
+	margin-bottom: 260px !important;
+}
+
+.mission-sec-wrap {
+	margin-bottom: 145px !important;
+}
+/* end Sections */
+
+
+
+/* begin Slick Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus { outline: none; }
+
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after { display: table; content: ''; }
+
+.slick-track:after { clear: both; }
+
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide { float: right; }
+
+.slick-slide img { display: block; }
+
+.slick-slide.slick-loading img { display: none; }
+
+.slick-slide.dragging img { pointer-events: none; }
+
+.slick-initialized .slick-slide { display: block; }
+
+.slick-loading .slick-slide { visibility: hidden; }
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden { display: none; }
+/* end Slick Slider */
+
+
+
+/* begin Slider Reviews */
+.reviews .slick-slider { padding: 0 15px; }
+
+.reviews .slick-initialized .slick-slide { outline: none; }
+
+.reviews .slick-prev,
+.reviews .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border-top: 3px solid #7e1a57;
+  border-right: 3px solid #7e1a57;
+  border-left: 0;
+  border-bottom: 0;
+  outline: none;
+  background: transparent;
+  opacity: 0.5;
+  color: #7e1a57;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.reviews .slick-prev { left: -50px; transform: rotate(-135deg); }
+.reviews .slick-next { right: -50px; transform: rotate(45deg); }
+
+@media (max-width: 1350px) {
+	.reviews .slick-prev { left: -40px; }
+	.reviews .slick-next { right: -40px; }
+}
+@media (max-width: 1150px) {
+	.reviews .slick-prev { left: -20px; }
+	.reviews .slick-next { right: -20px; }
+}
+@media (max-width: 768px) {
+	.reviews .slick-prev { left: -10px; }
+	.reviews .slick-next { right: -10px; }
+}
+@media (max-width: 540px) {
+	.reviews .slick-prev { left: 0; }
+	.reviews .slick-next { right: 0; }
+}
+
+.reviews .slick-prev:hover,
+.reviews .slick-prev:focus,
+.reviews .slick-next:hover,
+.reviews .slick-next:focus { opacity: 1; }
+/* end Slider Reviews */
+
+
+
+/* begin Reviews Blocks */
+.reviews .testimonial-entry {
+	float: left !important;
+	clear: none !important;
+	position: relative !important;
+	margin: 50px 20px 20px 20px !important;
+	padding: 0 !important;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 8px !important;
+	min-height: 400px !important;
+	
+	background-image: url(/wp-content/themes/total-child-theme/images/quote.svg) !important;
+   background-repeat: no-repeat !important;
+   background-position-x: calc(100% - 40px) !important;
+   background-position-y: calc(100% - 40px) !important;
+}
+
+/* foto */
+.reviews .testimonial-entry-thumb  {
+	position: absolute !important;
+	top: -50px !important;
+	left: 40px !important;
+	margin: 0 !important;
+	width: 100px !important;
+	height: 100px !important;
+}
+.reviews .testimonial-entry-thumb img {
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0 !important;
+	border: none !important;
+	object-fit: cover !important;
+}
+
+/* rating */
+.reviews .testimonial-entry-rating {
+	position: absolute !important;
+	top: 76px !important;
+	left: 40px !important;
+   right: 40px !important;
+	color: #7e1a57 !important;
+}
+.reviews .testimonial-entry-rating .ticon {
+	margin-right: 10px !important;
+	font-size: 1.2em !important;
+}
+
+/* content (text) */
+.reviews .testimonial-entry-content {
+	padding: 0 40px 0 40px !important;
+   margin: 125px 0 100px 0;
+   background-color: transparent !important;
+}
+.reviews .testimonial-caret {
+	display: none !important;
+}
+
+/* author */
+.reviews .testimonial-entry-author {
+	position: absolute !important;
+	bottom: 50px !important;
+	left: 40px !important;
+   right: 40px !important;
+	color: #314049 !important;
+}
+/* end Reviews Blocks */
+
+
+
+/* begin Services (Portfolio) Blocks */
+.portfolio-entry {
+	border-radius: 10px !important;
+	margin: 0 !important;
+}
+
+.portfolio-entry:hover { box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1) !important; }
+
+.portfolio-entry:hover,
+.portfolio-entry:hover .portfolio-entry-title,
+.portfolio-entry-title:hover a {
+	color: #fff !important;
+	background-color: #7e1a57 !important;
+}
+
+.portfolio-entry:hover .portfolio-entry-img {
+	filter: hue-rotate(180deg) contrast(1000%) invert(1) !important;
+}
+
+.portfolio-entry-inner {
+	position: relative !important;
+    text-align: center !important;
+	padding: 50px 15px !important;
+}
+
+.portfolio-entry-media {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.portfolio-entry-media-link {
+	position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.portfolio-entry-img {
+	margin-top: 50px !important;
+	width: 60px !important;
+    height: 60px !important; 
+}
+
+.portfolio-entry-details {
+   background: transparent !important;
+   border: none !important;
+	margin-top: 90px !important;
+	padding: 0 !important;
+}
+
+.portfolio-entry-excerpt {
+	padding: 0 15px !important;
+}
+/* end Services (Portfolio) Blocks */
+
+
+
+/* begin Footer */
+#footer-widgets {
+	display: flex !important;
+   flex-wrap: wrap !important;
+}
+
+.footer-widget .widget-title {
+	font-size: 1.2em !important;
+	font-weight: 700 !important;
+	
+}
+
+.footer-box.col-1 .wpex-about-widget-description {
+	padding-right: 160px !important;
+}
+.footer-box.col-1 .wpex-fa-social-widget.textleft ul li {
+	margin-right: 20px !important;
+}
+.footer-box.col-1 .wpex-fa-social-widget .wpex-social-btn {
+	color: #7e1a57 !important;
+   background-color: #fff !important;
+}
+
+.footer-box.col-2,
+.footer-box.col-3,
+.footer-box.col-4 {
+	padding-top: 15px !important;
+}
+
+.footer-box.col-4 .widget_wpex_newsletter form {
+	position: relative !important;
+}
+.footer-box.col-4 .widget_wpex_newsletter input[type="email"] {
+	padding: 0.6em !important;
+	height: auto !important;
+	font-size: 0.9em !important;
+}
+.footer-box.col-4 .widget_wpex_newsletter button {
+	position: absolute !important;
+   right: 0.6em !important;
+   top: 0.6em !important;
+   width: 2em !important;
+   height: 2em !important;
+	padding: 0 !important;
+	
+	background-image: url(/wp-content/themes/total-child-theme/images/arrow-right.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+#footer-bottom-inner {
+	position: relative !important;
+}
+#footer-bottom-inner:before {
+	position: absolute;
+	content: '';
+	display: block;
+	top:0;
+	left:0;
+	right:0;
+	width: 100%;
+	height: 2px;
+	background-color: #ffffff;
+	opacity: .2;
+}
+/* end Footer */
+
+
+/***************************** 
+*********	MEDIA	**********
+*****************************/
+@media (max-width: 960px) {
+
+	.about-sec-wrap {
+		margin-top: -50px !important;
+		margin-bottom: 65px !important;
+	}
+
+	.services-sec-wrap {
+		margin-bottom: 40px !important;
+	}
+	.services-sec-wrap .services__row-top {
+		margin-bottom: 45px !important;
+	}
+
+	.aim-sec-wrap {
+		margin-bottom: 70px !important;
+	}
+
+	.reviews-sec-wrap {
+		margin-top: 40px !important;
+		margin-bottom: 130px !important;
+	}
+
+	.mission-sec-wrap {
+		margin-bottom: 75px !important;
+	}
+
+	#footer-inner {
+		padding: 75px 0 25px 0 !important;
+	}
+	
+	.footer-box.col-1,
+	.footer-box.col-4 {
+		width: 100% !important;	
+	}
+	.footer-box.col-2,
+	.footer-box.col-3 { 
+		width: 50% !important;
+	}
+	.footer-box.col-1 .wpex-about-widget-description {
+		padding-right: 0 !important;
+	}
+	.footer-widget {
+   	padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 540px) {
+
+	.about-sec-wrap {
+		margin-top: -75px !important;
+		margin-bottom: 40px !important;
+	}
+
+	.services-sec-wrap {
+		margin-bottom: 25px !important;
+	}
+	.services-sec-wrap .services__row-top {
+		margin-bottom: 30px !important;
+	}
+
+	.aim-sec-wrap {
+		margin-bottom: 45px !important;
+	}
+
+	.reviews-sec-wrap {
+		margin-bottom: 85px !important;
+	}
+	.reviews .testimonial-entry-content {
+		padding: 20px !important;
+		margin: 100px 0 50px 0;
+	}
+	.reviews .testimonial-entry-author {
+		bottom: 20px !important;
+		left: 20px !important;
+	   right: 20px !important;
+	}
+
+	.mission-sec-wrap {
+		margin-bottom: 50px !important;
+	}
+
+	#footer-inner {
+		padding: 50px 0 25px 0 !important;
+	}
+	.footer-widget {
+   	padding-bottom: 10px;
+	}
+	
+}
+
+/******************************* 
+********	end MEDIA	********
+*******************************/
